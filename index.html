@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Game</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+
+    <!-- Background Images -->
+    <img src="images/12313.avif" id="first-image" alt="Quiz background">
+    <img src="images/20-questions-cargames-12.avif" id="second-image" alt="Quiz illustration">
+    <img src="images/download.jpeg" id="third-image" alt="Quiz logo">
+
+    <!-- Start Game Button -->
+    <div id="start-container">
+        <button id="start-button" onclick="startGame()">Start Game</button>
+    </div>
+
+
+
+    <!-- Background Music (Preloaded) -->
+    <audio id="bg-music" loop>
+        <source src="Sounds/Backgroundmusic1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    
+    <!-- Quiz Container (Initially Hidden) -->
+    <div id="quiz-container" style="display: none;">
+        <div id="time-left">10</div>
+        <div id="question">Question text will appear here</div>
+
+        <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 1</button>
+        <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 2</button>
+        <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 3</button>
+        <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 4</button>
+        
+        <div id="result"></div>
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Next Question</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Quiz Game. All Rights Reserved.</p>
+        <p>Mileiny Nolasco</p>
+        <p><a href="https://mileiny2024.github.io/milieny/#home" target="_blank">Visit our website</a></p>
+    </footer>
+
+</body>
+</html>
