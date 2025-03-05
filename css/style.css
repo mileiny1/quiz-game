@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1d1f20;
+  background-color: #f4f4f4;
   color: white;
   display: flex;
   justify-content: center;
@@ -17,20 +17,6 @@ img {
   width: 80%;
   max-width: 400px;
   margin-bottom: 20px;
-}
-
-#second-image {
-  position: absolute; /* Allows free movement */
-  right: 50px; /* Moves it to the right */
-  width: 200px; /* Adjust size */
-  height: auto;
-}
-
-#third-image {
-  position: absolute; /* Allows free movement */
-  left: 50px; /* Moves it to the right */
-  width: 200px; /* Adjust size */
-  height: auto;
 }
 
 
@@ -102,7 +88,7 @@ img {
 #next-button {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #28a745;
+  background-color: #f4f4f4;;
   color: white;
   border: none;
   border-radius: 5px;
@@ -112,7 +98,7 @@ img {
 }
 
 #next-button:hover {
-  background-color: #218838;
+  background-color: #0056b3;
 }
 
 /* Footer Styles */
@@ -145,6 +131,14 @@ body {
 
 @media (min-width: 600px) {
   body {
-    background-color: lightgreen;
+    background-color: #261C14;
   }
+}
+@media (min-width: 600px) {
+  
+img {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
 }
